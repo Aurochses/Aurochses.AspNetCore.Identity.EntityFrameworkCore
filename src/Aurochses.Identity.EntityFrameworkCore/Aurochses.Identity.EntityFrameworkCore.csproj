@@ -13,4 +13,11 @@
     <Description>Library for Identity using EntityFrameworkCore.</Description>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Aurochses.Data.EntityFrameworkCore" Version="1.2.1" />
+    <PackageReference Include="Aurochses.Identity" Version="1.2.0" />
+    <PackageReference Include="IdentityModel" Version="2.10.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.2" />
+  </ItemGroup>
+
 </Project>
