@@ -11,6 +11,7 @@
     <RepositoryUrl>https://github.com/Aurochses/Aurochses.Identity.EntityFrameworkCore</RepositoryUrl>
     <PackageTags>Identity EntityFrameworkCore</PackageTags>
     <Description>Library for Identity using EntityFrameworkCore.</Description>
+    <Version>1.2.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
