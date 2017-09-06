@@ -45,6 +45,9 @@ namespace Aurochses.Identity.EntityFrameworkCore.Tests
 
         private void ValidateClaim(ClaimsPrincipal principal, string expectedClaimType, string expectedClaimValue, string expectedClaimValueType)
         {
+            if (expectedClaimValue == null) throw new ArgumentNullException(nameof(expectedClaimValue));
+            if (expectedClaimValueType == null) throw new ArgumentNullException(nameof(expectedClaimValueType));
+
             var claim = Assert.Single(principal.FindAll(expectedClaimType));
             Assert.NotNull(claim);
             Assert.Equal(expectedClaimValue, claim.Value);
