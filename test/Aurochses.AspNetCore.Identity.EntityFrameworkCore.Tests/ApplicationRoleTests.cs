@@ -1,8 +1,8 @@
-﻿using System;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using System;
 using Xunit;
 
-namespace Aurochses.Identity.EntityFrameworkCore.Tests
+namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
 {
     public class ApplicationRoleTests
     {

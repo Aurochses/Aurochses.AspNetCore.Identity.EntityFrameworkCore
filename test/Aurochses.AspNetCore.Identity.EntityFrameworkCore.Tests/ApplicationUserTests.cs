@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using Aurochses.Data.EntityFrameworkCore.MsSql;
 using Aurochses.Testing;
 
-namespace Aurochses.Identity.EntityFrameworkCore.Tests
+namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
 {
     public class ApplicationUserTests
     {

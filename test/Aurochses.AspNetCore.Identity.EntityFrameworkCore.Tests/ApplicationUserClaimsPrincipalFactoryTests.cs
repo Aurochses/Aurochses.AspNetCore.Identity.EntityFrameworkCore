@@ -2,14 +2,14 @@
 using System.Linq;
 using System.Security.Claims;
 using Aurochses.Testing;
-using IdentityModel;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Options;
 using Moq;
 using Xunit;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Builder;
+using IdentityModel;
 
-namespace Aurochses.Identity.EntityFrameworkCore.Tests
+namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
 {
     public class ApplicationUserClaimsPrincipalFactoryTests
     {

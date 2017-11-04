@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using Aurochses.Data.EntityFrameworkCore.MsSql;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
-namespace Aurochses.Identity.EntityFrameworkCore
+namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore
 {
     /// <summary>
     /// User

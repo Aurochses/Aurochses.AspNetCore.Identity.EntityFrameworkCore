@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
-namespace Aurochses.Identity.EntityFrameworkCore
+namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore
 {
     /// <summary>
     /// Role
