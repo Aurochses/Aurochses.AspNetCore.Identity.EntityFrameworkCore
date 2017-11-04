@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1AC0758D-AC61-4056-B975-620ABDC8C3F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A4DF1773-CFAE-47E8-9420-DD532ED27B68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aurochses.AspNetCore.Identity.EntityFrameworkCore", "src\Aurochses.AspNetCore.Identity.EntityFrameworkCore\Aurochses.AspNetCore.Identity.EntityFrameworkCore.csproj", "{C4C183A2-7771-42B4-B412-F77080BF386E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests", "test\Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests\Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests.csproj", "{0F996EB7-F8D8-4734-901C-A41EF01A031C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4C183A2-7771-42B4-B412-F77080BF386E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4C183A2-7771-42B4-B412-F77080BF386E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4C183A2-7771-42B4-B412-F77080BF386E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4C183A2-7771-42B4-B412-F77080BF386E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F996EB7-F8D8-4734-901C-A41EF01A031C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F996EB7-F8D8-4734-901C-A41EF01A031C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F996EB7-F8D8-4734-901C-A41EF01A031C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F996EB7-F8D8-4734-901C-A41EF01A031C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C4C183A2-7771-42B4-B412-F77080BF386E} = {1AC0758D-AC61-4056-B975-620ABDC8C3F0}
+		{0F996EB7-F8D8-4734-901C-A41EF01A031C} = {A4DF1773-CFAE-47E8-9420-DD532ED27B68}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {553BEDFC-42BE-43A0-9272-126F976E0DEE}
+	EndGlobalSection
+EndGlobal

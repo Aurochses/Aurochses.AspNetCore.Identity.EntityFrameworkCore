@@ -3,7 +3,7 @@ using Aurochses.Data.EntityFrameworkCore.MsSql;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Aurochses.Identity.EntityFrameworkCore
+namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore
 {
     /// <summary>
     /// Identity DbContext
