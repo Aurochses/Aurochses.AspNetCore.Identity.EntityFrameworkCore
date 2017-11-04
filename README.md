@@ -1,11 +1,12 @@
-# Aurochses Identity EntityFrameworkCore
+# Aurochses AspNetCore Identity EntityFrameworkCore
 
-Aurochses Identity EntityFrameworkCore is a library for Identity using EntityFrameworkCore.
+Aurochses AspNetCore Identity EntityFrameworkCore is a library for AspNetCore Identity using EntityFrameworkCore.
 
 ## NuGet
 
-[![NuGet](https://img.shields.io/nuget/v/Aurochses.Identity.EntityFrameworkCore.svg?style=flat-square)](https://www.nuget.org/packages/Aurochses.Identity.EntityFrameworkCore)
-[![NuGet](https://img.shields.io/nuget/dt/Aurochses.Identity.EntityFrameworkCore.svg?style=flat-square)](https://www.nuget.org/packages/Aurochses.Identity.EntityFrameworkCore)
+[![NuGet](https://img.shields.io/nuget/v/Aurochses.AspNetCore.Identity.EntityFrameworkCore.svg?style=flat-square)](https://www.nuget.org/packages/Aurochses.AspNetCore.Identity.EntityFrameworkCore)
+[![NuGet](https://img.shields.io/nuget/dt/Aurochses.AspNetCore.Identity.EntityFrameworkCore.svg?style=flat-square)](https://www.nuget.org/packages/Aurochses.AspNetCore.Identity.EntityFrameworkCore)
+[![NuGet Status](http://nugetstatus.com/Aurochses.AspNetCore.Identity.EntityFrameworkCore.png)](http://nugetstatus.com/packages/Aurochses.AspNetCore.Identity.EntityFrameworkCore)
 
 ## Builds
 

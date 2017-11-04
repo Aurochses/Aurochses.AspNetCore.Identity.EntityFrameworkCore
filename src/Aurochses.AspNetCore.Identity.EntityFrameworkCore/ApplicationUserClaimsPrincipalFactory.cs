@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 
-namespace Aurochses.Identity.EntityFrameworkCore
+namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore
 {
     /// <summary>
     /// User Claims

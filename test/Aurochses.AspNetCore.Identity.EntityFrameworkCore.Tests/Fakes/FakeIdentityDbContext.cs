@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Aurochses.Identity.EntityFrameworkCore.Tests.Fakes
+namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests.Fakes
 {
     public class FakeIdentityDbContext : IdentityDbContext
     {

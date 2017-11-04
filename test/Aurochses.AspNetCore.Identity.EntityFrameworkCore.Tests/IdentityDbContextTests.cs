@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Linq.Expressions;
+using Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests.Fakes;
 using Aurochses.Data.EntityFrameworkCore.MsSql;
-using Aurochses.Identity.EntityFrameworkCore.Tests.Fakes;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Xunit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
-using Xunit;
 
-namespace Aurochses.Identity.EntityFrameworkCore.Tests
+namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
 {
     public class IdentityDbContextTests
     {
