@@ -1,10 +1,10 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Xunit;
 using System.ComponentModel.DataAnnotations.Schema;
 using Aurochses.Data.EntityFrameworkCore.MsSql;
-using Aurochses.Testing;
+using Aurochses.Xunit;
+using Microsoft.AspNetCore.Identity;
 
 namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
 {
