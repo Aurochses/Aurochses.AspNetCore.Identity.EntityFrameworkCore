@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Linq;
 using System.Security.Claims;
-using Aurochses.Testing;
+using Aurochses.Xunit;
 using Moq;
 using Xunit;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
-using Microsoft.AspNetCore.Builder;
 using IdentityModel;
 
 namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
@@ -28,7 +27,7 @@ namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
             mockUserManager.SetupGet(x => x.SupportsUserEmail).Returns(true);
             mockUserManager.SetupGet(x => x.SupportsUserPhoneNumber).Returns(true);
 
-            var mockRoleManager = new Mock<RoleManager<ApplicationRole>>(new Mock<IRoleStore<ApplicationRole>>(MockBehavior.Strict).Object, null, null, null, null, null);
+            var mockRoleManager = new Mock<RoleManager<ApplicationRole>>(new Mock<IRoleStore<ApplicationRole>>(MockBehavior.Strict).Object, null, null, null, null);
 
             var mockOptionsAccessor = new Mock<IOptions<IdentityOptions>>(MockBehavior.Strict);
             mockOptionsAccessor.SetupGet(x => x.Value).Returns(new IdentityOptions());
