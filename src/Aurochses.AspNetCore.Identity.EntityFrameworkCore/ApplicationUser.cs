@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Aurochses.Data.EntityFrameworkCore.MsSql;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore
 {
