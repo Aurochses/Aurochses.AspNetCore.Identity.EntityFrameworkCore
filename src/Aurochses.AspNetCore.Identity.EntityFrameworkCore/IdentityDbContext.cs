@@ -1,5 +1,5 @@
 ﻿using System;
-using Aurochses.Data.EntityFrameworkCore.MsSql;
+using Aurochses.Data.Extensions.MsSql;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;

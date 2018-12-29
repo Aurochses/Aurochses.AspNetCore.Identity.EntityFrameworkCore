@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 using Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests.Fakes;
-using Aurochses.Data.EntityFrameworkCore.MsSql;
+using Aurochses.Data.Extensions.MsSql;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Xunit;
