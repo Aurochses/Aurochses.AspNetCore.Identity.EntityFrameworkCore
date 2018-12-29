@@ -15,6 +15,10 @@
     <PackageTags>Entity Framework Core Identity ASP.NET Core</PackageTags>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Aurochses.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Aurochses.Data.EntityFrameworkCore" Version="2.1.0" />
