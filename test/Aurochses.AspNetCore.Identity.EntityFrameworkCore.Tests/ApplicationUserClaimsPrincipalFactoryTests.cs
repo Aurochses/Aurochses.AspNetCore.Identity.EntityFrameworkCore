@@ -14,7 +14,7 @@ namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
     {
         private const int BaseClaimsCount = 2; // amount of claims that added in base class
 
-        private static Guid _applicationUserId = new Guid("00000000-0000-0000-0000-000000000000");
+        private static readonly Guid ApplicationUserId = new Guid("00000000-0000-0000-0000-000000000000");
         private const string ApplicationUserUserName = "john.black";
 
         private readonly ApplicationUserClaimsPrincipalFactory _applicationUserClaimsPrincipalFactory;
@@ -22,7 +22,7 @@ namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
         public ApplicationUserClaimsPrincipalFactoryTests()
         {
             var mockUserManager = new Mock<UserManager<ApplicationUser>>(new Mock<IUserStore<ApplicationUser>>(MockBehavior.Strict).Object, null, null, null, null, null, null, null, null);
-            mockUserManager.Setup(x => x.GetUserIdAsync(It.IsAny<ApplicationUser>())).ReturnsAsync(_applicationUserId.ToString());
+            mockUserManager.Setup(x => x.GetUserIdAsync(It.IsAny<ApplicationUser>())).ReturnsAsync(ApplicationUserId.ToString());
             mockUserManager.Setup(x => x.GetUserNameAsync(It.IsAny<ApplicationUser>())).ReturnsAsync(ApplicationUserUserName);
             mockUserManager.SetupGet(x => x.SupportsUserEmail).Returns(true);
             mockUserManager.SetupGet(x => x.SupportsUserPhoneNumber).Returns(true);
@@ -42,11 +42,9 @@ namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
             Assert.IsAssignableFrom<UserClaimsPrincipalFactory<ApplicationUser, ApplicationRole>>(_applicationUserClaimsPrincipalFactory);
         }
 
+        // todo: move to Aurochses.Xunit
         private void ValidateClaim(ClaimsPrincipal principal, string expectedClaimType, string expectedClaimValue, string expectedClaimValueType)
         {
-            if (expectedClaimValue == null) throw new ArgumentNullException(nameof(expectedClaimValue));
-            if (expectedClaimValueType == null) throw new ArgumentNullException(nameof(expectedClaimValueType));
-
             var claim = Assert.Single(principal.FindAll(expectedClaimType));
             Assert.NotNull(claim);
             Assert.Equal(expectedClaimValue, claim.Value);
@@ -61,7 +59,7 @@ namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
 
             var applicationUser = new ApplicationUser
             {
-                Id = _applicationUserId,
+                Id = ApplicationUserId,
                 UserName = ApplicationUserUserName,
                 FirstName = "John",
                 LastName = "Black",
@@ -93,7 +91,7 @@ namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
 
             var applicationUser = new ApplicationUser
             {
-                Id = _applicationUserId,
+                Id = ApplicationUserId,
                 UserName = ApplicationUserUserName,
                 FirstName = null,
                 LastName = null,
