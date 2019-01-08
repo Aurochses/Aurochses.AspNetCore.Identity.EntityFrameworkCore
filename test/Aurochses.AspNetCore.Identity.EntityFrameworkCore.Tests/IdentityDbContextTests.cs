@@ -4,9 +4,9 @@ using Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests.Fakes;
 using Aurochses.Data.Extensions.MsSql;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Xunit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+using Xunit;
 
 namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
 {
@@ -18,7 +18,9 @@ namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
 
         public IdentityDbContextTests()
         {
-            var dbContextOptions = new DbContextOptions<IdentityDbContext>();
+            var dbContextOptions = new DbContextOptionsBuilder<IdentityDbContext>()
+                .UseInMemoryDatabase(nameof(IdentityDbContextTests))
+                .Options;
 
             _dbContext = new FakeIdentityDbContext(dbContextOptions, SchemaName);
 
@@ -100,12 +102,10 @@ namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
             CheckTable<IdentityUserToken<Guid>>(_modelBuilder, SchemaName, "UserToken");
         }
 
+        // todo: move to Aurochses.Xunit.EntityFrameworkCore
         private static void CheckTable<TEntity>(ModelBuilder modelBuilder, string schemaName, string tableName)
             where TEntity : class
         {
-            if (schemaName == null) throw new ArgumentNullException(nameof(schemaName));
-            if (tableName == null) throw new ArgumentNullException(nameof(tableName));
-
             var entityTypeBuilder = modelBuilder.Entity<TEntity>();
 
             var relational = entityTypeBuilder.Metadata.Relational();
@@ -114,11 +114,10 @@ namespace Aurochses.AspNetCore.Identity.EntityFrameworkCore.Tests
             Assert.Equal(tableName, relational.TableName);
         }
 
+        // todo: move to Aurochses.Xunit.EntityFrameworkCore
         private static void CheckPropertyDefaultValueSql<TEntity, TProperty>(ModelBuilder modelBuilder, Expression<Func<TEntity, TProperty>> propertyExpression, string expectedValue)
             where TEntity : class
         {
-            if (expectedValue == null) throw new ArgumentNullException(nameof(expectedValue));
-
             var propertyBuilder = modelBuilder.Entity<TEntity>().Property(propertyExpression);
 
             var relational = propertyBuilder.Metadata.Relational();

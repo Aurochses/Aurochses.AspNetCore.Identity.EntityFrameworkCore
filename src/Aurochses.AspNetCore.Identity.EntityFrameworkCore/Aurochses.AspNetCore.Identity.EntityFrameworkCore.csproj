@@ -21,9 +21,9 @@
 
   <ItemGroup>
     <PackageReference Include="Aurochses.AspNetCore.Identity" Version="2.2.0" />
-    <PackageReference Include="Aurochses.Data.EntityFrameworkCore" Version="2.1.0" />
-    <PackageReference Include="Aurochses.Data.Extensions.MsSql" Version="2.1.0" />
-    <PackageReference Include="IdentityModel" Version="3.10.4" />
+    <PackageReference Include="Aurochses.Data.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Aurochses.Data.Extensions.MsSql" Version="2.2.0" />
+    <PackageReference Include="IdentityModel" Version="3.10.5" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
   </ItemGroup>
 
