@@ -1,18 +1,18 @@
-# Aurochses AspNetCore Identity EntityFrameworkCore
+# Aurochses.AspNetCore.Identity.EntityFrameworkCore
 
-Aurochses AspNetCore Identity EntityFrameworkCore is a library for AspNetCore Identity using EntityFrameworkCore.
+Aurochses.AspNetCore.Identity.EntityFrameworkCore is a library for ASP.NET Core Identity using Entity Framework Core.
 
 ## NuGet
+[![NuGet Version](https://img.shields.io/nuget/v/Aurochses.AspNetCore.Identity.EntityFrameworkCore.svg?style=flat-square)](https://www.nuget.org/packages/Aurochses.AspNetCore.Identity.EntityFrameworkCore)
+[![NuGet Dependencies](https://img.shields.io/librariesio/release/nuget/Aurochses.AspNetCore.Identity.EntityFrameworkCore.svg?style=flat-square)](https://libraries.io/nuget/Aurochses.AspNetCore.Identity.EntityFrameworkCore)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Aurochses.AspNetCore.Identity.EntityFrameworkCore.svg?style=flat-square)](https://www.nuget.org/packages/Aurochses.AspNetCore.Identity.EntityFrameworkCore)
 
-[![NuGet](https://img.shields.io/nuget/v/Aurochses.AspNetCore.Identity.EntityFrameworkCore.svg?style=flat-square)](https://www.nuget.org/packages/Aurochses.AspNetCore.Identity.EntityFrameworkCore)
-[![NuGet](https://img.shields.io/nuget/dt/Aurochses.AspNetCore.Identity.EntityFrameworkCore.svg?style=flat-square)](https://www.nuget.org/packages/Aurochses.AspNetCore.Identity.EntityFrameworkCore)
-[![NuGet Status](http://nugetstatus.com/Aurochses.AspNetCore.Identity.EntityFrameworkCore.png)](http://nugetstatus.com/packages/Aurochses.AspNetCore.Identity.EntityFrameworkCore)
+## Azure DevOps
 
-## Builds
+[![Build](https://img.shields.io/azure-devops/release/Aurochses/61cd8e26-670f-4d15-9b53-5e73a476a30f/10/10.svg?style=flat-square)](https://Aurochses.visualstudio.com/Aurochses.GitHub/_release?definitionId=10)
 
-Type            | Status 
-----------------|--------
-CI (develop)    | [![Visual Studio Team services](https://img.shields.io/vso/build/aurochses/784be346-9d3f-458f-95d8-5f1a8b5e1227/281.svg?style=flat-square)](https://aurochses.visualstudio.com/Aurochses.CSharp/_build/index?definitionId=281)
-CI (pre-master) | [![Visual Studio Team services](https://img.shields.io/vso/build/aurochses/784be346-9d3f-458f-95d8-5f1a8b5e1227/282.svg?style=flat-square)](https://aurochses.visualstudio.com/Aurochses.CSharp/_build/index?definitionId=282)
-PR (latest)     | [![Visual Studio Team services](https://img.shields.io/vso/build/aurochses/784be346-9d3f-458f-95d8-5f1a8b5e1227/283.svg?style=flat-square)](https://aurochses.visualstudio.com/Aurochses.CSharp/_build/index?definitionId=283)
-NuGet           | [![Visual Studio Team services](https://img.shields.io/vso/build/aurochses/784be346-9d3f-458f-95d8-5f1a8b5e1227/284.svg?style=flat-square)](https://aurochses.visualstudio.com/Aurochses.CSharp/_build/index?definitionId=284)
+Branch     | Build | Tests | Coverage
+-----------|-------|-------|----------
+develop | [![Build](https://img.shields.io/azure-devops/build/Aurochses/Aurochses.GitHub/388/develop.svg?style=flat-square)](https://Aurochses.visualstudio.com/Aurochses.GitHub/_build/latest?definitionId=388&branchName=develop) | [![Tests](https://img.shields.io/azure-devops/tests/Aurochses/Aurochses.GitHub/388/develop.svg?style=flat-square)](https://Aurochses.visualstudio.com/Aurochses.GitHub/_build/latest?definitionId=388&branchName=develop) | [![Coverage](https://img.shields.io/azure-devops/coverage/Aurochses/Aurochses.GitHub/388/develop.svg?style=flat-square)](https://Aurochses.visualstudio.com/Aurochses.GitHub/_build/latest?definitionId=388&branchName=develop)
+pre-master | [![Build](https://img.shields.io/azure-devops/build/Aurochses/Aurochses.GitHub/388/pre-master.svg?style=flat-square)](https://Aurochses.visualstudio.com/Aurochses.GitHub/_build/latest?definitionId=388&branchName=pre-master) | [![Tests](https://img.shields.io/azure-devops/tests/Aurochses/Aurochses.GitHub/388/pre-master.svg?style=flat-square)](https://Aurochses.visualstudio.com/Aurochses.GitHub/_build/latest?definitionId=388&branchName=pre-master) | [![Coverage](https://img.shields.io/azure-devops/coverage/Aurochses/Aurochses.GitHub/388/pre-master.svg?style=flat-square)](https://Aurochses.visualstudio.com/Aurochses.GitHub/_build/latest?definitionId=388&branchName=pre-master)
+master | [![Build](https://img.shields.io/azure-devops/build/Aurochses/Aurochses.GitHub/388/master.svg?style=flat-square)](https://Aurochses.visualstudio.com/Aurochses.GitHub/_build/latest?definitionId=388&branchName=master) | [![Tests](https://img.shields.io/azure-devops/tests/Aurochses/Aurochses.GitHub/388/master.svg?style=flat-square)](https://Aurochses.visualstudio.com/Aurochses.GitHub/_build/latest?definitionId=388&branchName=master) | [![Coverage](https://img.shields.io/azure-devops/coverage/Aurochses/Aurochses.GitHub/388/master.svg?style=flat-square)](https://Aurochses.visualstudio.com/Aurochses.GitHub/_build/latest?definitionId=388&branchName=master)
