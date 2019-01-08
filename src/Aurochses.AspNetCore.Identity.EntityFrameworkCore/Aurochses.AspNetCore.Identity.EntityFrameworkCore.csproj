@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Aurochses.AspNetCore.Identity.EntityFrameworkCore</PackageId>
-    <Version>2.1.0</Version>
+    <Version>2.2.0</Version>
     <Authors>Aurochses</Authors>
     <Company>Aurochses</Company>
     <Description>Aurochses.AspNetCore.Identity.EntityFrameworkCore is a library for ASP.NET Core Identity using Entity Framework Core.</Description>
