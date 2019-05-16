@@ -13,6 +13,9 @@
     <PackageIconUrl>https://www.gravatar.com/avatar/cb5925a77e502401f95bf2738b123994?s=64</PackageIconUrl>
     <RepositoryUrl>https://github.com/Aurochses/Aurochses.AspNetCore.Identity.EntityFrameworkCore</RepositoryUrl>
     <PackageTags>Entity Framework Core Identity ASP.NET Core</PackageTags>
+
+    <!-- SonarQube needs this -->
+    <ProjectGuid>{00000000-0000-0000-0000-000000000001}</ProjectGuid>
   </PropertyGroup>
 
   <PropertyGroup>
